@@ -17,6 +17,7 @@
 		7544650327A782EE00647210 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754464D927A782EC00647210 /* ContentView.swift */; };
 		7544650427A782EE00647210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754464DA27A782ED00647210 /* Assets.xcassets */; };
 		7544650527A782EE00647210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754464DA27A782ED00647210 /* Assets.xcassets */; };
+		7544651727A799D300647210 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7544651627A799D300647210 /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		754464F827A782EE00647210 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		754464FC27A782EE00647210 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		754464FE27A782EE00647210 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		7544651427A799D300647210 /* JunkyardBarcode (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "JunkyardBarcode (iOS).entitlements"; sourceTree = "<group>"; };
+		7544651627A799D300647210 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/PassKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7544651727A799D300647210 /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +90,13 @@
 		754464D227A782EC00647210 = {
 			isa = PBXGroup;
 			children = (
+				7544651427A799D300647210 /* JunkyardBarcode (iOS).entitlements */,
 				754464D727A782EC00647210 /* Shared */,
 				754464E627A782ED00647210 /* macOS */,
 				754464EF27A782EE00647210 /* Tests iOS */,
 				754464FB27A782EE00647210 /* Tests macOS */,
 				754464E027A782ED00647210 /* Products */,
+				7544651527A799D300647210 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +145,14 @@
 				754464FE27A782EE00647210 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		7544651527A799D300647210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7544651627A799D300647210 /* PassKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,8 +477,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "JunkyardBarcode (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -492,8 +508,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "JunkyardBarcode (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35G39V2UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
