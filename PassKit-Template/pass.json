@@ -1,0 +1,56 @@
+{
+	"formatVersion" : 1,
+	"passTypeIdentifier" : "pass.jp.co.JchanKchan.JunkyardBarcode",
+	"serialNumber" : "InputUniqueSerialNumberHere",
+	"teamIdentifier" : "F35G39V2UB",
+	"barcodes" : [
+		{
+		    "message" : "https://downloads.watarusuzuki.github.io/example.pkpass",
+		    "format" : "PKBarcodeFormatQR",
+		    "messageEncoding" : "iso-8859-1"
+		}
+	],
+	"organizationName" : "JchanKchan",
+	"description" : "Example of Pass by JunkyardBarcode",
+	"storeCard" : {
+		"headerFields" : [
+			{
+				"key" : "header-name",
+				"textAlignment" : "PKTextAlignmentRight",
+				"label" : "LABEL",
+				"value" : "some value"
+			}
+		],
+		"auxiliaryFields" : [
+			{
+				"key" : "blog",
+				"label" : "BLOG",
+				"value" : "http://watarusuzuki.github.io",
+				"textAlignment" : "PKTextAlignmentLeft"
+			},
+			{
+				"key" : "twitter",
+				"label" : "TWITTER",
+				"value" : "@DevJchanKchan",
+				"textAlignment" : "PKTextAlignmentRight"
+			}
+		],
+		"backFields" : [
+			{
+				"key" : "back-name",
+				"label" : "NAME",
+				"value" : "JchanKchan"
+			},
+			{
+				"key" : "back-twitter",
+				"label" : "TWITTER",
+				"attributedValue" : "<a href='https://twitter.com/devjchankchan'>@DevJchanKchan</a>"
+			},
+			{
+				"key" : "back-github",
+				"label" : "GITHUB",
+				"attributedValue" : "<a href='https://github.com/WataruSuzuki'>@WataruSuzuki</a>"
+			}
+		]
+	}
+}
